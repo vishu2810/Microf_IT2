@@ -38,7 +38,7 @@ public class LoginPageTest extends TestBase {
 	
 	@Test(priority=3)
 	public void LoginPage(){
-		dashboard = loginpage.LoginPage(prop.getProperty("username"), prop.getProperty("password"));
+		dashboard = loginpage.loginpagefnc(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	@AfterMethod

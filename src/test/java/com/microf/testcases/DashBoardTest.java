@@ -9,7 +9,6 @@ import com.microf.qa.base.TestBase;
 import com.microf.qa.pages.DashBoard;
 import com.microf.qa.pages.LoginPage;
 import com.microf.qa.pages.SelectProducts;
-import com.microf.qa.util.TestUtil;
 
 public class DashBoardTest extends TestBase{
 	
@@ -24,7 +23,7 @@ public class DashBoardTest extends TestBase{
 	public void setup(){
 		initialization();
 		loginpage = new LoginPage();
-		dashboard= loginpage.LoginPage(prop.getProperty("username"), prop.getProperty("password"));	
+		dashboard= loginpage.loginpagefnc(prop.getProperty("username"), prop.getProperty("password"));	
 	}
 	
 	@Test(priority =1)

@@ -1,6 +1,5 @@
 package com.microf.qa.pages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -34,7 +33,7 @@ public class LoginPage extends TestBase{
 		return verifyloginsection.isDisplayed();
 	}
 	
-	public DashBoard LoginPage(String username, String password){
+	public DashBoard loginpagefnc(String username, String password){
 		email.sendKeys(username);
 		pswd.sendKeys(password);
 		btnsign.click();

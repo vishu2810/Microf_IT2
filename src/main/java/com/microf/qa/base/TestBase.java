@@ -25,7 +25,7 @@ public class TestBase {
 	public TestBase(){
 		try{
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("/Microf_IT2/src/main/java/com/microf/qa/config/config.properties");
+			FileInputStream ip = new FileInputStream(System.getProperty("user.dir")+ "/src/main/java/com/microf/qa/config/config.properties");
 			prop.load(ip);
 		}catch(FileNotFoundException e){
 			e.printStackTrace();		
@@ -39,12 +39,12 @@ public class TestBase {
 	public static void initialization(){
 		String browsername = prop.getProperty("browser");
 		if (browsername.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\uivg2\\Desktop\\selenium driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\vishu\\Desktop\\Selenium\\browsing drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 
-		}
+		} 	
 		if (browsername.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Public\\Desktop\\Selenium 3.7.1 Utilities\\Jars and Drivers\\Drivers\\geckodriver-v0.19.1-win64\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\vishu\\Desktop\\Selenium\\browsing drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		

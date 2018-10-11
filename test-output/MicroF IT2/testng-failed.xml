@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MicroF IT2]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Microf Application creation(failed)">
+    <classes>
+      <class name="com.microf.testcases.E2ETest">
+        <methods>
+          <include name="CreateApplication" invocation-numbers="0"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.microf.testcases.E2ETest -->
+    </classes>
+  </test> <!-- Microf Application creation(failed) -->
+</suite> <!-- Failed suite [MicroF IT2] -->

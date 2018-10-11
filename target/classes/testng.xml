@@ -4,8 +4,10 @@
 	<test name="Microf Application creation">
 		
 		<classes>
-			<class name="com.microf.testcases.DashBoardTest"></class>
-			<class name="com.microf.testcases.LoginPageTest"></class>
+	<!-- 	<class name="com.microf.testcases.DashBoardTest"></class> -->
+	<!-- 	<class name="com.microf.testcases.LoginPageTest"></class> -->
+			<class name="com.microf.testcases.E2ETest"></class>
+	
 		</classes>
 	</test>
 </suite>
